@@ -1,0 +1,18 @@
+.sidebar{
+  width: 30%;
+  height: 100vh;
+  background: bisque;
+  position: absolute;
+  left: -30%; top: 0;
+  transition: all .7s ease-out;
+}
+
+.open{
+  left: 0;
+}
+
+.sidebar-menus{
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+}

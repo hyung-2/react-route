@@ -1,0 +1,93 @@
+/* 컴포넌트 안에 css가 있으면 복잡하므로 빼준다 */
+.button{
+  all: unset; /*default삭제*/
+  color: white;
+  /* background: tomato; 배경색 지정에서 작성 */
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 10px;
+
+  display: inline-flex; /* 그냥 flex는 버튼이 한줄을 다 차지하므로 inline-flex로 준다 */
+  justify-content: center;
+  align-items: center;
+
+  /* height: 50px;
+  padding-left: 10px;
+  padding-right: 10px; 
+  사이즈에 따라 크기가 달라지므로 사이즈 지정에서 작성 */
+}
+
+.button:hover{
+  background: orangered;
+  opacity: .7;
+}
+
+/* 사이즈 지정 */
+.large{
+  height: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1.2rem;
+}
+.medium{
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px; 
+  font-size: 1rem;
+}
+.small{
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: .8rem;
+}
+
+/* 컬러 지정 */
+.blue{
+  background-color: blue;
+}
+.blue:hover{
+  background-color: skyblue;
+  color: blue;
+}
+.tomato{
+  background-color: tomato;
+}
+.tomato:hover{
+  background-color: lightsalmon;
+  color: tomato;
+}
+.grey{
+  background-color: grey;
+}
+.grey:hover{
+  background-color: lightgray;
+  color: grey;
+}
+.green{
+  background-color: green;
+}
+.green:hover{
+  background-color: springgreen;
+  color: green;
+}
+
+/* width 지정 */
+.fullWidth{
+  width: 100%;
+  margin-left: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* disabled true일 경우 스타일 지정  */
+.blocked{
+  background-color: lightgray;
+  text-decoration: line-through;
+}
+.blocked:hover{
+  background-color: lightgray;
+  opacity: 1;
+  color: white;
+}
